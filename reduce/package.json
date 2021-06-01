@@ -1,0 +1,28 @@
+{
+  "name": "reduce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reduce.js",
+  "directories": {
+    "test": "mocha",
+    "watch": "npm-watch"
+  },
+  "scripts": {
+    "test": "mocha",
+    "watch": "npm-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  },
+  "watch": {
+    "test": "{test}/*.js"
+  },
+  "dependencies": {
+    "npm-watch": "^0.9.0",
+    "watch": "^1.0.2",
+    "watchman": "^1.0.0"
+  }
+}

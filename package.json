@@ -22,6 +22,6 @@
     "watchman": "^1.0.0"
   },
   "watch": {
-    "test": "{src,test}/*.js"
+    "test": "{test}/*.js"
   }
 }
