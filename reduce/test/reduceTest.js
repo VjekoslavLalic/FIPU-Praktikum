@@ -2,7 +2,7 @@ let assert = require('assert');
 let chai = require("chai");
 let expect = chai.expect;
 let should = chai.should;
-const { subtraction, removeDuplicate, sum, union, common, fieldByIndex, getLocation, groupBy, people } = require("../reduce.js");
+const { euros, subtraction, removeDuplicate, sum, union, common, fieldByIndex, getLocation, groupBy, people } = require("../reduce.js");
 
 
 
@@ -128,5 +128,16 @@ describe('REDUCE', function () {
     it("for [21, 4, 12] should return 10", function () {
         expect(subtraction([21, 4, 12])).to.be.equal(5)
     });
+
+    it("counting euros: [40, 50, 60] should be 150", function () {
+        expect(euros([40, 50, 60])).to.equal(150)
+    });
+
+    it("counting euros: [22,16] should be 38", function () {
+        expect(euros([22, 16])).to.equal(38)
+    });
+
+
+
 
 });

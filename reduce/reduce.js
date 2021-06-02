@@ -112,6 +112,11 @@ function subtraction(numbers) {
     const minus = ((total, num) => total - num)
     return numbers.reduce(minus);
 }
+//PRIMJER 9
+function euros(arr) {
+    const reducer = ((total, amount) => total + amount);
+    return arr.reduce(reducer);
+}
 
-module.exports = { subtraction, removeDuplicate, sum, union, common, fieldByIndex, getLocation, groupBy, people };
+module.exports = { euros, subtraction, removeDuplicate, sum, union, common, fieldByIndex, getLocation, groupBy, people };
 
