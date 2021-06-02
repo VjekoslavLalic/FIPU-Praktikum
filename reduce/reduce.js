@@ -96,6 +96,22 @@ function groupBy(objectArray, property) {
 }
 
 console.log('primjer6: ', groupBy(people, 'age'))
+//PRIMJER 7
+function removeDuplicate(ageGroup) {
+    let uniqueAgeGroup = ageGroup.reduce(function (accumulator, currentValue) {
+        if (accumulator.indexOf(currentValue) === -1) {
+            accumulator.push(currentValue);
+        }
+        return accumulator;
+    }, []
+    );
+    return uniqueAgeGroup;
+}
+//PRIMJER 8
+function subtraction(numbers) {
+    const minus = ((total, num) => total - num)
+    return numbers.reduce(minus);
+}
 
-module.exports = { sum, union, common, fieldByIndex, getLocation, groupBy, people };
+module.exports = { subtraction, removeDuplicate, sum, union, common, fieldByIndex, getLocation, groupBy, people };
 
