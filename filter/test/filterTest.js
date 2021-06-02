@@ -4,7 +4,7 @@ let chai = require("chai");
 const { is } = require('immutable');
 let expect = chai.expect;
 let should = chai.should;
-const { isBigEnough, isPrime, array, arrObj, filterByID, arrByID, invalidEntries, filterItems, fruits, words, modifiedWords, appendedWords, deleteWords } = require("../filter.js");
+const { isOdd, isPositive, checkAdult, isBigEnough, isPrime, array, arrObj, filterByID, arrByID, invalidEntries, filterItems, fruits, words, modifiedWords, appendedWords, deleteWords } = require("../filter.js");
 
 
 
@@ -56,6 +56,18 @@ describe('FILTER', function () {
     it('(7)deleteWords should return ', function () {
         expect(deleteWords).to.be.eql(["spray", "limit"])
     })
+    //PRIMJER 8
+    it("checking if the number is odd", function () {
+        expect(isOdd([15, 13, 22, 49, 66, 62])).to.eql([15, 13, 49])
+    });
+    //PRIMJER 9
+    it("checking if the number is positive", function () {
+        expect(isPositive([-6, 30, -4, 34, 89, -100])).to.eql([30, 34, 89])
+    });
+    //PRIMJER 10
+    it("checking if the person is over 18 years old", function () {
+        expect(checkAdult([28, 66, 8, 13])).to.eql([28, 66])
+    });
 
 
 });

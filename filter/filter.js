@@ -105,6 +105,21 @@ const deleteWords = words.filter((word, index, arr) => {
 })
 
 console.log(deleteWords)
+//PPRIMJER 8
+function isOdd(m) {
+    const odd = m.filter(numb => numb % 2 != 0)
+    return odd;
+}
+//PRIMJER 9
+function isPositive(positive) {
+    const plus = positive.filter(pos => pos > 0)
+    return plus;
+}
+//PRIMJER 10
+function checkAdult(ages) {
+    const adult = ages.filter(age => age >= 18)
+    return adult;
+}
 
-module.exports = { isBigEnough, isPrime, array, arrObj, filterByID, arrByID, invalidEntries, fruits, filterItems, words, modifiedWords, appendedWords, deleteWords }
+module.exports = { isOdd, isPositive, checkAdult, isBigEnough, isPrime, array, arrObj, filterByID, arrByID, invalidEntries, fruits, filterItems, words, modifiedWords, appendedWords, deleteWords }
 
