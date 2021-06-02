@@ -1,11 +1,11 @@
-let numbers = [3, 25, 100]
-let roots = numbers.map(function (num) {
-    return Math.sqrt(num)
-})
-console.log(roots)
 
-let numbers2 = [3, 25, 100]
+//PRIMJER 3
+let numbers = [1, 4, 9]
 let doubles = numbers.map(function (num) {
     return num * 2
 })
-console.log(doubles)
+
+// doubles is now   [2, 8, 18]
+// numbers is still [1, 4, 9]
+
+module.exports = { doubles };
